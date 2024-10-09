@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Responder
+comment1.params=
+comment1.target=Responder()
+comment2.params=userInput
+comment2.target=java.lang.String\ generateResponse(java.lang.String)
+comment3.params=
+comment3.target=void\ initializeAnswers()
+comment4.params=
+comment4.target=void\ initializeResponseMap()
+comment5.params=
+comment5.target=java.lang.String\ getRandomAnswer()
+numComments=6
