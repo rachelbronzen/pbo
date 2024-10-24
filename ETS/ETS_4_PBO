@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+
+class FoodOrder {
+    private ArrayList<String> menuItems;
+    private double totalPrice;
+    private boolean isPaid;
+
+    public FoodOrder() {
+        this.menuItems = new ArrayList<>();
+        this.totalPrice = 0.0;
+        this.isPaid = false;
+    }
+
+    public void addItem(String menuItem, double price) {
+        menuItems.add(menuItem);
+        totalPrice += price;
+        System.out.println(menuItem + " added to the order. Price: Rp" + price);
+    }
+
+    public void removeItem(String menuItem, double price) {
+        if (menuItems.contains(menuItem)) {
+            menuItems.remove(menuItem);
+            totalPrice -= price;
+            System.out.println(menuItem + " removed from the order. Your total: Rp" + price);
+        } 
+        else {
+            System.out.println(menuItem + " is not in your order list.");
+        }
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void pay() {
+        if (!isPaid) {
+            isPaid = true;
+            System.out.println("\nThe order has been paid. Total: Rp" + totalPrice);
+        } 
+    }
+
+    public boolean isPaid() {
+        return isPaid;
+    }
+
+    public void printOrderDetails() {
+        System.out.println("\nOrder Details:");
+        for (String item : menuItems) {
+            System.out.println("- " + item);
+        }
+        System.out.println("Total Price: Rp" + totalPrice);
+        System.out.println("Payment Status: " + (isPaid ? "Paid" : "Not Paid"));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        FoodOrder order = new FoodOrder();
+        order.addItem("Nasi Ayam Lemak", 28000);
+        order.addItem("Air Putih", 2500);
+        order.addItem("Kopi Butter", 5000);
+        order.addItem("Nasi Hainan", 27000);
+        order.addItem("Teh Tarik", 5000);
+        order.removeItem("Air Putih", 2500);
+        order.printOrderDetails();
+        order.pay();
+        System.out.println("Payment Status: " + (order.isPaid()? "Paid" : "Not Paid"));
+    }
+}
