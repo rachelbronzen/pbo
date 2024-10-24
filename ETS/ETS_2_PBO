@@ -1,0 +1,36 @@
+class Book {
+    private String title;
+    private String writer;
+    private int year;
+    private String publisher;
+    private String category;
+    private String price;
+
+    //konstruktor
+    public Book(String title, String writer, int year, String publisher, String category, String price) {
+        this.title = title;
+        this.writer = writer;
+        this.year = year;
+        this.publisher = publisher;
+        this.category = category;
+        this.price = price;
+    }
+
+    public void printDetails() {
+        System.out.println("Book Details");
+        System.out.println("Title   : " + title);
+        System.out.println("Writer  : " + writer);
+        System.out.println("Year    : " + year);
+        System.out.println("Publisher   : " + publisher);
+        System.out.println("Category    : " + category);
+        System.out.println("Price   : " + price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        //membuat objek Book dgn konstruktor
+        Book myBook = new Book("The Smile", "Rachel Bronzen", 2035, "ITS-MEDIA", "Horror", "$1000");
+        myBook.printDetails();
+    }
+}
