@@ -23,7 +23,7 @@ class ParkingTicketMachine {
     public void issueTicket() {
         if (balance >= ticketPrice) {
             ticketTime = balance / ticketPrice;
-            System.out.println("Ticket is for " + ticketTime + " hours.");
+            System.out.println("The ticket is for " + ticketTime + " hours.");
             balance = 0;
         }
         else {
