@@ -1,0 +1,47 @@
+class ParkingTicketMachine {
+    //atribut
+    private int balance;
+    private final int ticketPrice;
+    private int ticketTime;
+
+    public ParkingTicketMachine(int ticketPrice) {
+        this.ticketPrice = ticketPrice;
+        this.balance = 0;
+        this.ticketTime = 0;
+    }
+
+    public void insertMoney(int amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("You have inserted $" + amount);
+        }
+        else {
+            System.out.println("Invalid. Insert the correct amount.");
+        }
+    }
+
+    public void issueTicket() {
+        if (balance >= ticketPrice) {
+            ticketTime = balance / ticketPrice;
+            System.out.println("Ticket is for " + ticketTime + " hours.");
+            balance = 0;
+        }
+        else {
+            System.out.println("Your money is not enough. Insert more money.");
+        }
+    }
+
+    public int getTimePurchased() {
+        return ticketTime;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ParkingTicketMachine machine = new ParkingTicketMachine(2);
+        machine.insertMoney(10);
+        machine.issueTicket();
+        System.out.println("You have purchased " + machine.getTimePurchased() + " hours of parking.");
+        System.out.println("Thank you and Enjoy!");
+    }
+}
