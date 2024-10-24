@@ -1,0 +1,54 @@
+class DiorBag {         // kelas induk
+    protected String modelName;
+    protected double price;
+    protected String color;
+
+    public DiorBag(String modelName, double price, String color) {
+        this.modelName = modelName;
+        this.price = price;
+        this.color = color;
+    }
+
+    public void displayDetails() {
+        System.out.println("Model: " + modelName);
+        System.out.println("Price: €" + price);
+        System.out.println("Color: " + color);
+    }
+}
+
+class DiorHandbag extends DiorBag {     // kelas turunan
+    public DiorHandbag(String modelName, double price, String color) {
+        super(modelName, price, color); // pemanggilan kelas induk
+    }
+
+    public void openBag() {
+        System.out.println(modelName + ", a classic Famous Dior Bag");
+    }
+}
+
+class DiorBackpack extends DiorBag {    //kelas turunan
+    public DiorBackpack(String modelName, double price, String color) {
+        super(modelName, price, color);
+    }
+
+    public void carryOnShoulders() {
+        System.out.println(modelName + ", your go to school bag");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        System.out.println("Introducing\nThe Current Available Bag\n");
+        DiorHandbag handbag = new DiorHandbag("Lady Dior", 75000000, "Black");
+        DiorBackpack backpack = new DiorBackpack("Dior Travel Backpack", 85000000, "Baby Blue");
+
+        System.out.println("Handbag Details:");
+        handbag.displayDetails();
+        handbag.openBag(); 
+        System.out.println();
+        System.out.println("Backpack Details:");
+        backpack.displayDetails();
+        backpack.carryOnShoulders(); 
+    }
+}
