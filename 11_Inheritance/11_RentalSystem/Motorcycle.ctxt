@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Motorcycle
+comment1.params=brand\ year\ renterName\ renterPhone
+comment1.target=Motorcycle(java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ displayDetails()
+numComments=3

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Post
+comment1.params=username
+comment1.target=Post(java.lang.String)
+comment2.params=
+comment2.target=void\ like()
+comment3.params=
+comment3.target=void\ unlike()
+comment4.params=comment
+comment4.target=void\ addComment(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getUsername()
+comment6.params=
+comment6.target=java.util.Date\ getTimestamp()
+comment7.params=
+comment7.target=int\ getLikes()
+comment8.params=
+comment8.target=java.util.ArrayList\ getComments()
+comment9.params=
+comment9.target=void\ display()
+numComments=10

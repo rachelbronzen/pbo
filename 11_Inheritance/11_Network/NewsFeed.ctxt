@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NewsFeed
+comment1.params=
+comment1.target=NewsFeed()
+comment2.params=post
+comment2.target=void\ addMessagePost(MessagePost)
+comment3.params=post
+comment3.target=void\ addPhotoPost(PhotoPost)
+comment4.params=
+comment4.target=void\ displayAllPosts()
+comment5.params=username
+comment5.target=void\ displayPostsByUser(java.lang.String)
+numComments=6
