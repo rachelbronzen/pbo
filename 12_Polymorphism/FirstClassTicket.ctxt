@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FirstClassTicket
+comment1.params=quantity
+comment1.target=FirstClassTicket(int)
+comment2.params=
+comment2.target=java.lang.String\ getFacilities()
+comment3.params=
+comment3.target=java.lang.String\ getLevel()
+comment4.params=
+comment4.target=double\ getPrice()
+numComments=5
