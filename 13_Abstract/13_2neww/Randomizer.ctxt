@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Randomizer
+comment1.params=
+comment1.target=Randomizer()
+comment2.params=
+comment2.target=java.util.Random\ getInstance()
+comment3.params=max
+comment3.target=int\ nextInt(int)
+numComments=4
