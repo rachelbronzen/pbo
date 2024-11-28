@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SimulatorView
+comment1.params=field
+comment1.target=SimulatorView(Field)
+comment2.params=step\ field
+comment2.target=void\ showStatus(int,\ Field)
+numComments=3
