@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ImageHandler
+comment1.params=file
+comment1.target=void\ loadImage(java.io.File)
+comment2.params=
+comment2.target=java.awt.image.BufferedImage\ getCurrentImage()
+comment3.params=
+comment3.target=void\ rotateImage()
+numComments=4
